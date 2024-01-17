@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Landing</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- HEADER START-->
+    <input type="checkbox" id="checkbox-open" class="menu-checkbox">
+    <header class="Header">
+        <div class="wrap">
+            <div class="header-content">
+                <a href="#" class="header-logo"><img src="./assets/img/logo-bookmark-desktop.svg" alt="bookmark-logo"></a>
+                <label for="checkbox-open" class="header-menu-open"></label>
+                <nav class="header-menu-wrap">
+                    <div class="wrap">
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- DARKMOD START -->
+                <div class="darkmode-container">
+                    <label class="dark-mode-switch">
+                        <input class="dark-mode-input" type="checkbox" id="darkModeToggle">
+                        <ion-icon name="sunny" class="sun"></ion-icon>
+                        <ion-icon name="moon" class="moon"></ion-icon>
+                        <span class="toggle"></span>
+                        <span class="animateBg"></span>
+                    </label>
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                </div>
+               <!-- DARKMOD END -->
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- HERO START -->
+    <section class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <article class="hero-image">
+                    <img  class="hero-img" src="./assets/img/illustration-hero.svg" alt="hero-image" >
+                    <div class="bg"></div>
+                </article>
+                <div class="hero-text">
+                    <h1 class="hero-title">A Simple Bookmark Manager</h1>
+                    <p class="hero-paragraf">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="hero-buttons">
+                        <button class="chrome-btn">Get it on Chrome</button>
+                        <button class="firefox-btn">Get it on Firefox</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO END -->
+
+    <!-- FEATURES START -->
+    <section class="features">
+        <div class="wrap">
+            <h2 class="wrap-title">Features</h2>
+            <p class="wrap-paragraf">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div class="tabs-radio">
+                <input type="radio" name="tabs" value="bookmarking" id="bookmarking" checked>
+                <input type="radio" name="tabs" value="searching" id="searching">
+                <input type="radio" name="tabs" value="sharing" id="sharing">
+                <ul>
+                    <li class="tabs-link">
+                        <label for="bookmarking">Simple Bookmarking</label>
+                    </li>
+                    <li class="tabs-link">
+                        <label for="searching">Speedy Searching</label>
+                    </li>
+                    <li class="tabs-link">
+                        <label for="sharing">Easy Sharing</label>
+                    </li>
+                </ul>
+
+                <div class="tabs-grid">
+                    <div class="tabs-item" id="item-bookmarking">
+                        <img class="fadeInLeft" src="./assets/img/features-1.svg" alt="tab1">
+                        <div>
+                            <h2 class="tab-title">Bookmark in one click</h2>
+                            <p class="tab-paragraf">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                            <button class="tab-btn">More Info</button>
+                        </div>
+                    </div>
+
+                    <div class="tabs-item" id="item-searching">
+                        <img class="fadeInLeft" src="./assets/img/features-2.svg" alt="tab2">
+                        <div>
+                            <h2 class="tab-title">Intelligent search</h2>
+                            <p class="tab-paragraf">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <button class="tab-btn">More Info</button>
+                        </div>
+                    </div>
+
+                    <div class="tabs-item" id="item-sharing">
+                        <img class="fadeInLeft" src="./assets/img/features-3.svg" alt="tab3">
+                        <div>
+                            <h2 class="tab-title">Share your bookmarks</h2>
+                            <p class="tab-paragraf"> Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                            <button class="tab-btn">More Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES END -->
+
+    <!-- DOWNLOAD START -->
+    <section class="download">
+        <div class="wrap">
+            <h2 class="download-title">Download the extension</h2>
+            <p class="download-paragraf">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+            <div class="download-grid">
+                <div class="download-item">
+                    <img src="./assets/img/logo-chrome.svg" alt="chrome">
+                    <h3>Add to Chrome</h3>
+                    <p>Minimum version 62</p>
+                    <button>Add & Install Extension</button>
+                </div>
+
+                <div class="download-item">
+                    <img src="./assets/img/logo-firefox.svg" alt="firefox">
+                    <h3>Add to Firefox</h3>
+                    <p>Minimum version 55</p>
+                    <button>Add & Install Extension</button>
+                </div>
+
+                <div class="download-item">
+                    <img src="./assets/img/logo-opera.svg" alt="opera">
+                    <h3>Add to Opera</h3>
+                    <p>Minimum version 46</p>
+                    <button>Add & Install Extension</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DOWNLOAD END -->
+    <!-- FAQ START -->
+    <section class="faq">
+        <div class="wrap">
+            <h2 class="faq-h2">Frequently Asked Questions</h2>
+            <p class="faq-paragraf">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+            <div class="questions-and-answers">
+                <div class="faq-item">
+                  <details class="faq-detail">
+                    <summary class="faq-title">
+                        What is Bookmark?
+                    </summary>
+                    <p class="faq-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum esse deserunt pariatur dolorum amet voluptates tenetur dolor eaque omnis!.</p>
+                  </details>  
+
+                  <details class="faq-detail">
+                    <summary class="faq-title">
+                        How can I request a new browser?
+                    </summary>
+                    <p class="faq-paragraf">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                  </details> 
+
+                  <details class="faq-detail">
+                    <summary class="faq-title">
+                        Is there a mobile app?
+                    </summary>
+                    <p class="faq-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas quidem sunt at natus id a veritatis consequatur enim ducimus harum laudantium itaque. Dolorem quaerat dignissimos corrupti veritatis esse, nostrum similique cumque! Ea cum facere voluptatum. Ab, sunt, dolorum itaque numquam velit quos possimus, quod perferendis tempora libero nostrum rem.</p>
+                  </details> 
+
+                  <details class="faq-detail">
+                    <summary class="faq-title">
+                        What about other Chromium browsers?
+                    </summary>
+                    <p class="faq-paragraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ea officia neque eligendi quis repudiandae itaque perspiciatis sequi minus illo temporibus consequuntur dolore illum, repellendus quia pariatur cupiditate fuga sint aliquam mollitia quo fugiat laboriosam labore? Optio sunt voluptatem quis?</p>
+                  </details> 
+                </div>
+            </div>
+            <button class="faq-btn">More Info</button>
+        </div>
+    </section>
+    <!-- FAQ END -->
+
+    <!-- MAİL START -->
+    <section class="mail">
+        <div class="wrap">
+            <h5>35,000+ already joined</h5>
+            <h4>Stay up-to-date with what <br> we’re doing</h4>
+            <form action="" class="mail-form" onsubmit="validateEmail(event)">
+                <div class="message-input">
+                    <input class="mail-input" id="emailInput" placeholder="Enter your email address" type="text">
+                    <span class="error-message">Whoops, make sure it’s an email!</span>
+                    <span class="true-message">Thank you for subscribing!</span>
+                </div>
+                <button class="submit-btn" type="submit">Contact Us</button>
+            </form>
+            
+        </div>
+    </section>
+    
+    <!-- MAİL END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <img src="./assets/img/logo-bookmark-footer.svg" alt="logo-bookmark-footer">
+                    <ul class="footer-menu">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" class="footer-facebook"><img src="./assets/img/icon-facebook.svg" alt="facebook"></a>
+                    <a href="https://twitter.com/" class="footer-twitter"><img src="./assets/img/x.png" alt="twitter"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    
+</body>
+</html>
