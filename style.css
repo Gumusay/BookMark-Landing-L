@@ -76,7 +76,7 @@ button {
     background: rgba(47,53,79,0.9);
     height: 100vh;
     transform: translateY(-50px);
-    transition: 0.1s transform, 0.1s opacity;
+    
     will-change: transform;
     margin-left: auto;
 }
@@ -145,7 +145,7 @@ button {
     left: 0;
     right: 0;
     padding: 16px 0;
-    transition: 4s background;
+    transition: 2s background;
     z-index: 2; 
 }
 .header-logo{
@@ -182,24 +182,26 @@ button {
     margin-top: 10px;
 }
 .chrome-btn{
+    border: 2px solid #5267DF;
     margin-bottom: 10px;
 }
-
-.chrome-btn:hover{
+.firefox-btn{
+    /* border: 2px solid #5B6074; */
     border: 2px solid #5267DF;
+}
+.chrome-btn:hover{
     color: #5267DF;
     background: #FFF;
     transition: 0.3s;
 }
 .firefox-btn:hover{
-    border: 2px solid #5B6074;
     color: #5B6074;
     background: #FFF;
     transition: 0.3s;
 }
 .bg {
     position: absolute;
-    right: -30px;
+    right: -20px;
     bottom: 10px;
     height: 150px;
     width: 100%;
@@ -220,8 +222,10 @@ button {
 .tabs-link:hover{
     color: #FA5959;
 }
-.tab-btn:hover{
+.tab-btn{
     border: 2px solid #5267DF;
+}
+.tab-btn:hover{
     color: #5267DF;
     background: #FFF;
     transition: 0.3s;
@@ -334,8 +338,12 @@ button {
     border-radius: 16px;
     padding: 24px;
     padding-top: 40px;
-    background: url("./assets/img/bg-dots.svg") repeat-x center bottom 100px;
+    background: url("./assets/img/bg-dots.svg") repeat-x center bottom 135px;
     transition: all 0.6s ease;
+}
+.download-item p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .download-item:hover {
     transform: scale(1.05);
@@ -461,8 +469,10 @@ button {
     margin-left: 10px;
     height: 50px;
 }
-.submit-btn:hover{
+.submit-btn{
     border: 1px solid #FA5959;
+}
+.submit-btn:hover{
     background: #FFF;
     color: #FA5959;
 }
@@ -548,18 +558,22 @@ body {
   
   .dark-mode {
     background-color: #333;
-    color: #fff;
   }
   
   .dark-mode .toggle {
     background: #f8f8f8;
   } 
   .dark-mode header {
-    background-color: rgba(255, 255, 255, 0.1); 
+    /* background-color: rgba(255, 255, 255, 0.1);  */
+    background-color: #333;
+    color: #FFF;
    
   }
   .dark-mode .header-menu-wrap ul {
     color: #fff; 
+  }
+  .dark-mode .header-menu-wrap a{
+    color: #fff;
   }
 
 
@@ -632,6 +646,7 @@ body {
         position: initial;
         height: auto;
         background: initial;
+        transition: 0.1s transform, 0.1s opacity;
     }
 
     .header-menu-wrap a{
