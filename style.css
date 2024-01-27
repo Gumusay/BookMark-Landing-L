@@ -46,7 +46,6 @@ p {
     font-size: 18px;
 }
 button {
-    background: #5368df;
     color: #fff;
     padding: 16px 16px;
     font-size: 18px;
@@ -54,7 +53,7 @@ button {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 5px 10px -1px #5368df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
 }
 
 
@@ -181,13 +180,14 @@ button {
 .hero-buttons{
     margin-top: 10px;
 }
-.chrome-btn{
+.chrome-btn{ 
+    background: #5368df;
     border: 2px solid #5267DF;
-    margin-bottom: 10px;
 }
 .firefox-btn{
-    /* border: 2px solid #5B6074; */
-    border: 2px solid #5267DF;
+    border: 2px solid #5B6074;
+    background: #F7F7F7;
+    color: #5B6074;
 }
 .chrome-btn:hover{
     color: #5267DF;
@@ -195,11 +195,10 @@ button {
     transition: 0.3s;
 }
 .firefox-btn:hover{
-    color: #5B6074;
     background: #FFF;
-    transition: 0.3s;
+    transition: 0.3s;   
 }
-.bg {
+/* .bg {
     position: absolute;
     right: -20px;
     bottom: 10px;
@@ -208,7 +207,7 @@ button {
     background-color: hsl(231, 69%, 60%);
     border-radius: 200px 0 0 200px;
     z-index: -1;
-  }
+  } */
 
 /* HERO END */
 /* FEATURES START */
@@ -223,7 +222,9 @@ button {
     color: #FA5959;
 }
 .tab-btn{
+    margin-top: 20px;
     border: 2px solid #5267DF;
+    background: #5368df;
 }
 .tab-btn:hover{
     color: #5267DF;
@@ -338,28 +339,25 @@ button {
     border-radius: 16px;
     padding: 24px;
     padding-top: 40px;
-    background: url("./assets/img/bg-dots.svg") repeat-x center bottom 135px;
+    background: url("./assets/img/bg-dots.svg") repeat-x center bottom 110px;
     transition: all 0.6s ease;
 }
 .download-item p {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .download-item:hover {
     transform: scale(1.05);
-    box-shadow:  rgba(83,104,223,0.3) -10px 10px,rgba(83,104,223,0.3) -20px 20px ;
+    box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
 }
-.download-item img{
-    transition: all 0.6s ease;
-}
-.download-item:hover img {
-    transform: scale(1.5);
-  }
 
+.download-item button{
+    background: #5368df;
+    border-color: #5267DF;
+}
 .download-item button:hover {
     background: #fff;
     color:#5267DF;
-    border-color: #5267DF;
     transition: transform 0.3s;
 }
 .download-item .download-paragraf {
@@ -373,7 +371,12 @@ button {
 /* DOWNLOAD END */
 /* FAQ START */
 .faq{
-    padding: 64px 0 128px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 32px;
+    gap: 64px;
+    align-items: center;
     text-align: center;
   }
 .questions-and-answers{
@@ -382,60 +385,57 @@ button {
     margin: 32px auto;
 }
 
-.faq .wrap  {
-  width: 60%;
-}
-
-
 .faq-detail {
   background-color: white;
   color: black;
   border-radius: 20px;
-  box-shadow: 0 10px 11px -5px hsl(231, 69%, 55%);
   margin: 20px 0;
+}
+.faq-item{
+    border-bottom: 1px solid #9194A2;
 }
 
 .faq-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 20px 80px 20px 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.faq-title::after {
-  content: "\002B";
-  font-size: 2.2rem;
-  position: absolute;
-  right: 20px;
-  transition: 0.2s;
+.faq-title h4{
+    color: #242A45;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
 }
-
-.faq-title.active::after {
-  transform: rotate(45deg);
+.faq-paragraf{
+    display: none;
 }
-
-.faq-paragraf {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.3s;
+.faq-paragraf h5{
+    color: #242A45;
+    opacity: 0.75;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.141px; 
 }
-
-.faq-paragraf  {
-  padding: 0 20px 20px;
-  line-height: 1.5rem;
+.faq-title::after{
+    content: url('./assets/img/path-on.svg');
 }
-
+.active .faq-title::after {
+    content:url('./assets/img/path-off.svg');
+}
 .faq-btn:hover{
     background: #fff;
     color:#5267DF;
-    border-color: #5267DF;
     transition: transform 0.3s;
-
 }
-
+.faq-btn{
+    border: 1px solid #5267DF;
+    background-color: #5267DF;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+}
 /* FAQ END */
 
 /* MAİL START*/
@@ -471,6 +471,7 @@ button {
 }
 .submit-btn{
     border: 1px solid #FA5959;
+    background: #FA5959;
 }
 .submit-btn:hover{
     background: #FFF;
@@ -480,7 +481,6 @@ button {
     width: 100%;
     padding: 16px;
     box-sizing: border-box;
-    margin-bottom: 16px;
     border-radius: 10px;
     border: none;
     font-size: 16px;
@@ -488,6 +488,9 @@ button {
 }
 .mail-input::-webkit-input-placeholder {
     color: #9194A2;
+  }
+  .message-input{
+    margin-bottom: 10px;
   }
 .error-message{
     color: #fff;
@@ -498,7 +501,7 @@ button {
     padding-block: 4px;
     background-color: red;
     display: none;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 .true-message{
@@ -510,7 +513,7 @@ button {
     padding-block: 4px;
     background-color: green;
     display: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 /* MAİL END*/
 
@@ -554,6 +557,7 @@ button {
 
 body {
     transition: background-color 1s;
+    
   }
   
   .dark-mode {
@@ -702,14 +706,14 @@ body {
     .hero-text {
         grid-area: content;
     }
-    .bg {
+    /* .bg {
     height: 300px;
     }
 
     .bg {
         right: -17%;
         width: 100%;
-    }
+    } */
 
 
     

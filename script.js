@@ -44,22 +44,41 @@
 
 
 //FAQ START
-let faqTitles = document.querySelectorAll(".faq-title");
+// let faqTitles = document.querySelectorAll(".faq-title");
 
-faqTitles.forEach(faqTitle => {
-  faqTitle.addEventListener("click", event => {
-    const active = document.querySelector(".faq-title.active");
-    if (active && active !== faqTitle) {
-      active.classList.toggle("active");
-      active.nextElementSibling.style.maxHeight = 0;
-    }
-    faqTitle.classList.toggle("active");
-    const answer = faqTitle.nextElementSibling;
-    if (faqTitle.classList.contains("active")) {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-    } else {
-      answer.style.maxHeight = 0;
-    }
+// faqTitles.forEach(faqTitle => {
+//   faqTitle.addEventListener("click", event => {
+//     const active = document.querySelector(".faq-title.active");
+//     if (active && active !== faqTitle) {
+//       active.classList.toggle("active");
+//       active.nextElementSibling.style.maxHeight = 0;
+//     }
+//     faqTitle.classList.toggle("active");
+//     const answer = faqTitle.nextElementSibling;
+//     if (faqTitle.classList.contains("active")) {
+//       answer.style.maxHeight = answer.scrollHeight + "px";
+//     } else {
+//       answer.style.maxHeight = 0;
+//     }
+//   });
+// });
+document.addEventListener("DOMContentLoaded", function() {
+  const accContents = document.querySelectorAll(".faq-item");
+
+  accContents.forEach(function(content) {
+    const question = content.querySelector(".faq-title");
+
+    question.addEventListener("click", function() {
+      accContents.forEach(function(innerContent) {
+        if (innerContent !== content) {
+          innerContent.classList.remove("active");
+          innerContent.querySelector(".faq-paragraf").style.display = "none";
+        }
+      });
+      content.classList.toggle("active");
+      const answer = content.querySelector(".faq-paragraf");
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
   });
 });
 //FAQ END

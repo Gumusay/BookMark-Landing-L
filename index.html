@@ -13,7 +13,7 @@
     <header class="Header">
         <div class="wrap">
             <div class="header-content">
-                <a href="#" class="header-logo"><img src="./assets/img/logo-bookmark-desktop.svg" alt="bookmark-logo"></a>
+                <a href="#" class="header-logo"><img class="header-logo-img" src="./assets/img/logo-bookmark-desktop.svg" alt="bookmark-logo"></a>
                 <label for="checkbox-open" class="header-menu-open"></label>
                 <nav class="header-menu-wrap">
                     <div class="wrap">
@@ -48,7 +48,7 @@
             <div class="hero-grid">
                 <article class="hero-image">
                     <img  class="hero-img" src="./assets/img/illustration-hero.svg" alt="hero-image" >
-                    <div class="bg"></div>
+                    <!-- <div class="bg"></div> -->
                 </article>
                 <div class="hero-text">
                     <h1 class="hero-title">Basit Bir Yer İşareti Yöneticisi</h1>
@@ -151,39 +151,42 @@
     <section class="faq">
         <div class="wrap">
             <h2 class="faq-h2">Sıkça Sorulan Sorular</h2>
-            <p class="faq-paragraf">İşte bazı SSS'lerimiz. Başka cevaplamamızı istediğiniz başka sorularınız varsa lütfen bize e-posta göndermekten çekinmeyin.</p>
+            <p class="faq-p">İşte bazı sıkça sorulan sorular. Başka sorularınız varsa lütfen bize e-posta göndermekten çekinmeyin.</p>
             <div class="questions-and-answers">
                 <div class="faq-item">
-                  <details class="faq-detail">
-                    <summary class="faq-title">
-                        Bookmark Nedir?
-                    </summary>
-                    <p class="faq-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum esse deserunt pariatur dolorum amet voluptates tenetur dolor eaque omnis!.</p>
-                  </details>  
-
-                  <details class="faq-detail">
-                    <summary class="faq-title">
-                        Yeni bir tarayıcı talep etmek için nasıl başvurabilirim?
-                    </summary>
-                    <p class="faq-paragraf">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-                  </details> 
-
-                  <details class="faq-detail">
-                    <summary class="faq-title">
-                        Mobile app var mı?
-                    </summary>
-                    <p class="faq-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas quidem sunt at natus id a veritatis consequatur enim ducimus harum laudantium itaque. Dolorem quaerat dignissimos corrupti veritatis esse, nostrum similique cumque! Ea cum facere voluptatum. Ab, sunt, dolorum itaque numquam velit quos possimus, quod perferendis tempora libero nostrum rem.</p>
-                  </details> 
-
-                  <details class="faq-detail">
-                    <summary class="faq-title">
-                        Diğer Chromium tarayıcıları hakkında ne düşünüyorsunuz?
-                    </summary>
-                    <p class="faq-paragraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ea officia neque eligendi quis repudiandae itaque perspiciatis sequi minus illo temporibus consequuntur dolore illum, repellendus quia pariatur cupiditate fuga sint aliquam mollitia quo fugiat laboriosam labore? Optio sunt voluptatem quis?</p>
-                  </details> 
+                    <div class="faq-title">
+                        <h4>BookMark nedir?</h4>
+                    </div>
+                    <div class="faq-paragraf">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae natus ea quo nostrum! Aliquid ea veritatis laudantium hic qui eius ullam optio expedita, ut illum nesciunt dolor ipsum deserunt!</h5>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-title">
+                        <h4>Yeni bir tarayıcıyı nasıl indirebilirim?</h4>
+                    </div>
+                    <div class="faq-paragraf">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt quos ex necessitatibus fugiat eveniet voluptatum, quod minima, commodi, deleniti pariatur quis sunt fugit harum veniam possimus? Voluptates recusandae dignissimos, pariatur corporis consequatur sapiente voluptate distinctio exercitationem consequuntur omnis perspiciatis!</h5>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-title">
+                        <h4>Mobil uygulama var mı?</h4>
+                    </div>
+                    <div class="faq-paragraf">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem atque id vitae odio veritatis cumque ratione reiciendis accusamus illum earum, ipsam, tempore magni ea possimus ad inventore! Atque perferendis enim possimus nihil accusamus nam sunt.</h5>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-title">
+                        <h4>Peki ya diğer Chromium tarayıcıları?</h4>
+                    </div>
+                    <div class="faq-paragraf">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi obcaecati harum nemo repellat accusantium? Sapiente doloribus laborum, maxime quasi id cumque commodi expedita. Sapiente neque error facere, dolorum consequatur alias aperiam doloribus asperiores eius enim perspiciatis velit maiores repellendus.</h5>
+                    </div>
                 </div>
             </div>
-            <button class="faq-btn">Daha Fazla Bilgi</button>
+            <button class="faq-btn">Daha Fazlası</button>
         </div>
     </section>
     <!-- FAQ END -->
@@ -195,7 +198,7 @@
             <h4>Yaptıklarımızla ilgili güncel kalın</h4>
             <form action="" class="mail-form" onsubmit="validateEmail(event)">
                 <div class="message-input">
-                    <input class="mail-input" id="emailInput" placeholder="Enter your email address" type="text">
+                    <input class="mail-input" id="emailInput" placeholder="E-posta adresinizi girin" type="text">
                     <span class="error-message">Doğru e-posta adresi olduğuna emin olun!</span>
                     <span class="true-message">Abone olduğunuz için teşekkür ederiz!</span>
                 </div>
