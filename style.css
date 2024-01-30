@@ -839,3 +839,7 @@ body {
 
 }
 
+.dark-mode .logoPath {
+    fill: white;
+    transition: all 1s;
+}
